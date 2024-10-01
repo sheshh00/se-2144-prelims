@@ -1,29 +1,27 @@
-const display = document.getElementById('display');
-const calculator = document.getElementById('calculator');
-
 function appendToDisplay(value) {
-    display.value += value;
+    document.getElementById("display").value += value;
 }
 
 function clearDisplay() {
-    display.value = '';
-    calculator.style.display = 'block';
+    document.getElementById("display").value = "";
 }
 
 function deleteLast() {
-    display.value = display.value.slice(0, -1);
+    let currentValue = document.getElementById("display").value;
+    document.getElementById("display").value = currentValue.slice(0, -1);
 }
 
 function calculate() {
     try {
-        display.value = eval(display.value);
+        let result = eval(document.getElementById("display").value);
+        document.getElementById("display").value = result;
     } catch (error) {
-        display.value = 'Error';
+        document.getElementById("display").value = "Error";
     }
 }
 
 function bye() {
-    display.value = '';
+    document.getElementById("display").value = "";
 }
 
 function hello() {

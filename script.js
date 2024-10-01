@@ -22,7 +22,7 @@ function calculate() {
 
 function bye() {
     document.getElementById("display").value = "";
-    document.getElementById("display").disabled = true;
+    document.getElementById("appendToDisplay" , "deleteLast").disabled = true;
 }
 
 function hello() {

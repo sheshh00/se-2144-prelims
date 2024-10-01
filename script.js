@@ -21,10 +21,10 @@ function calculate() {
 }
 
 function bye() {
-    document.getElementById("display").value = "";
+    document.getElementById("display").addEventListener ("click", function (){
     document.getElementById("appendToDisplay" , "deleteLast").disabled = true;
-}
-
+});
+    
 function hello() {
     const greetings = ['Hello', 'Kamusta','Hola', 'Bonjour', 'Oi', 'Ciao', 'Salut', 'Aloha', 'Shalom','Gutan Tag', 'Chào'];
     display.value = greetings[Math.floor(Math.random() * greetings.length)];

@@ -22,6 +22,7 @@ function calculate() {
 
 function bye() {
     document.getElementById("display").value = "";
+    document.getElementById("display").disabled = true;
 }
 
 function hello() {
